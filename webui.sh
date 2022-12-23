@@ -1,7 +1,5 @@
 #!/bin/bash
 
-install_dir="/root"
-
 #################################################
 # Please do not make any changes to this file,  #
 # change the variables in webui-user.sh instead #
@@ -26,7 +24,7 @@ fi
 # Install directory without trailing slash
 if [[ -z "${install_dir}" ]]
 then
-    install_dir="/home/$(whoami)"
+    install_dir="/$(whoami)"
 fi
 
 # Name of the subdirectory (defaults to stable-diffusion-webui)
